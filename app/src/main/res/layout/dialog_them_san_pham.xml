@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Them san pham"
+            android:textColor="#f55"
+            android:textSize="12pt"
+            android:textStyle="bold"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/edtTenSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTitle"
+            android:hint="Nhap ten san pham..."
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/edtGiaSP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTenSP"
+            android:hint="Nhap gia san pham..."
+            android:layout_marginTop="10dp"
+            android:inputType="number"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgSP"
+            android:layout_below="@+id/edtGiaSP"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/image"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChonAnh"
+            android:text="Chon anh"
+            android:backgroundTint="#f55"
+            android:layout_below="@+id/imgSP"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnChonAnh">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnThemSP"
+                android:text="Them"
+                android:backgroundTint="#f55"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnHuyThemSP"
+                android:text="Huy"
+                android:backgroundTint="#f55"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
